@@ -32,15 +32,17 @@ function Upload() {
             <img className="file-icon" src={fileIcon} />
             <p className="file-info">Upload your excel sheet here</p>
             <input type="file" name="uploaded-file" required accept=".csv" onChange={handleFileUpload}/>
-            <a href="#">Remove</a>
+            {dataProcess && <a href="#">Remove</a>}
           </div>
 
-          <button className="upload-button" >
+          <button className="upload-button" style={dataProcess ? { backgroundColor: "#645cfcc5", cursor: "default" } : {}}>
             <AiOutlineUpload style={{ width: "22px", height: "22px" }} /> Upload
           </button>
         </form>
       </div>
-      {dataProcess && <UploadedItem data={data} />}
+      {dataProcess ? <UploadedItem data={data} />
+      : <p className="no-file">There is no file to display.</p>  
+    }
     </>
   );
 }

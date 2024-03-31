@@ -127,3 +127,8 @@ td a {
   border: 1px solid #ccc;
   cursor: pointer;
 }
+.no-file{
+  width: fit-content;
+  margin: auto;
+  margin-top: 20px;
+}
