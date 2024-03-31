@@ -1,0 +1,185 @@
+.form-wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 100;
+  background-color: rgb(248, 248, 248);
+}
+.form-side {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.form-design {
+  transform-origin: bottom left;
+  background-color: #645cfc;
+  position: absolute;
+  width: 50%;
+  height: 100%;
+  margin-left: -120px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 25px;
+  box-sizing: border-box;
+}
+.my-form {
+  margin-right: 15%;
+  padding: 20px 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 15px;
+  max-width: 660px;
+  min-width: 330px;
+}
+.form-design:first-child {
+  transform: skewX(-10deg);
+}
+.sign-in-desc {
+  font-weight: 500;
+}
+
+.socials-row {
+  display: flex;
+  gap: 14px;
+  margin-bottom: 20px;
+}
+.socials-row img {
+  width: 18px;
+  height: 18px;
+}
+.socials-row > a {
+  border-radius: 8px;
+  width: 100%;
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  font-size: 11px;
+  color: rgb(83, 83, 83);
+  background-color: #fff;
+  padding: 4px 0;
+}
+.sign-in-bottom {
+  background-color: #fff;
+  padding: 20px;
+  width: 100%;
+  border-radius: 8px;
+}
+.text-field {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+}
+.text-field label {
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+.text-field input {
+  border: none;
+  background-color: rgb(236, 236, 236);
+  border-radius: 8px;
+  padding: 10px;
+  font-family: inherit;
+  font-size: 13px;
+  font-weight: 500;
+  outline: none;
+}
+
+.text-field input:focus {
+  border: 2px solid #ccc;
+}
+.my-form__button {
+  background-color: #645cfc;
+  color: #fff;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+  line-height: 30px;
+  text-decoration: none;
+  cursor: pointer;
+  font-weight: 800;
+  min-height: 40px;
+  width: 100%;
+  border-radius: 8px;
+  font-family: inherit;
+  margin-bottom: 25px;
+}
+.my-form__button:hover {
+  background-color: #645cfcc5;
+}
+.sign-in-links {
+  font-size: 13px;
+  font-weight: 600;
+  text-decoration: none;
+  margin-left: 5px;
+  color: #645cfc;
+}
+.my-form__actions {
+  display: flex;
+  color: rgb(83, 83, 83);
+  width: fit-content;
+  margin: auto;
+  font-size: 13px;
+  margin-top: 10px;
+}
+
+.sign-in-links:hover {
+  text-decoration: underline;
+}
+
+.form-design-logo {
+  width: 55px;
+  height: 55px;
+  margin-left: -100px;
+}
+.form-design-title {
+  color: #fff;
+  font-size: 3rem;
+  text-transform: uppercase;
+}
+.form-design-container {
+  transform: skewX(10deg);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  margin-left: 100px;
+}
+.form-design-icons {
+  font-size: 35px;
+  color: #fff;
+}
+.form-design-icons svg {
+  margin-right: 22px;
+}
+
+@media screen and (max-width: 900px) {
+  .my-form {
+    margin-right: 5%;
+  }
+  .form-design-logo {
+    margin-left: -50px;
+  }
+}
+@media screen and (max-width: 762px) {
+  .form-design {
+    width: 0%;
+    margin-left: -180px;
+  }
+  .form-side {
+    justify-content: center;
+  }
+  .form-design-container {
+    display: none;
+  }
+}

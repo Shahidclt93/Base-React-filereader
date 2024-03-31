@@ -1,0 +1,49 @@
+.dashbord-header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100px;
+  width: 100%;
+  padding: 2rem;
+  box-sizing: border-box;
+}
+.dashboard-title {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-left: 30px;
+  width: fit-content;
+  visibility: hidden;
+}
+.dashbord-header-right {
+  display: flex;
+  align-items: center;
+}
+
+.notification-icon {
+  font-size: 30px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+.dashbord-header-avatar {
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  border-radius: 20px;
+}
+.upload-title{
+    margin-top: -70px;
+    margin-left: 10px;
+    width: fit-content;
+}
+@media screen and (max-width: 900px) {
+  .dashbord-header-container {
+    background-color: #fff;
+  }
+  .dashboard-title {
+    visibility: visible;
+  }
+  .upload-title{
+    margin-top: 10px;
+}
+}
